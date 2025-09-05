@@ -10,6 +10,7 @@
 <br/>
 <a href="hello-servlet">Hello Servlet</a> <br>
 <a href="Bai_06/form.jsp">Bài 6: Upload Multipart File</a> <br>
-<a href="Bai_07/formUpload.jsp">Bài  7: Upload Data to Database</a>
+<a href="Bai_07/formUpload.jsp">Bài  7: Upload Data to Database</a> <br>
+<a href="Bai_08/FormSendMail.jsp">Bài 8: Send Form mail</a>
 </body>
 </html>
