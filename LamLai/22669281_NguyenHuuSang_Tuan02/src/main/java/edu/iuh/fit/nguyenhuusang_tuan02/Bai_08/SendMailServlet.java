@@ -92,7 +92,7 @@ public class SendMailServlet extends HttpServlet {
             throw new ServletException("Lỗi gửi mail: " + e.getMessage(), e);
         }
     }
-    
+
     // tóm lại các bước gửi mail
     // 1. cấu hình SMTP (host, port, auth, TLS/SSL)
     // 2. tạo Session có xác thực ( đăng nhập vào SMTP server)
