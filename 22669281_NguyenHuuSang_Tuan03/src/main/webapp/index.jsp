@@ -9,6 +9,7 @@
 </h1>
 <br/>
 <a href="hello-servlet">Hello Servlet</a> <br>
-<a href="Bai_01/student_registration.jsp">Bài 01: Student Registration Form</a>
+<a href="Bai_01/student_registration.jsp">Bài 01: Student Registration Form</a> <br>
+<a href="Bai_02/FormResgistration.jsp">Bài 02: User Registration Form</a>
 </body>
 </html>
