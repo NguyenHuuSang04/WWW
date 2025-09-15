@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
     <title>Cart</title>
@@ -48,8 +49,8 @@
                             <input type="submit" value="Update"/>
                         </form>
                     </td>
-                    <td>${item.product.price}</td>
-                    <td>${item.product.price * item.quantity}</td>
+                    <td><fmt:formatNumber value="${item.product.price}" type="number" maxFractionDigits="0"/> VNĐ</td>
+                    <td><fmt:formatNumber value="${item.product.price * item.quantity}" type="number" maxFractionDigits="0"/> VNĐ</td>
                     <td>
                         <form action="${pageContext.request.contextPath}/cart" method="post" style="display:inline;">
                             <input type="hidden" name="action" value="remove"/>
@@ -60,7 +61,7 @@
                 </tr>
             </c:forEach>
         </table>
-        <p><strong>Total: </strong> ${cart.total}</p>
+        <p><strong>Total: </strong> <fmt:formatNumber value="${cart.total}" type="number" maxFractionDigits="0"/> VNĐ</p>
     </c:if>
 
     <a href="product">Continue Shopping</a>

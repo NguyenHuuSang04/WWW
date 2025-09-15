@@ -58,8 +58,17 @@ public class CartServlet extends HttpServlet {
         try {
             if ("add".equals(action)) {
                 int id = Integer.parseInt(req.getParameter("id"));
+                int quantity = 1;
+                try {
+                    String qtyStr = req.getParameter("quantity");
+                    if (qtyStr != null) {
+                        quantity = Integer.parseInt(qtyStr);
+                    }
+                } catch (Exception ex) {
+                    quantity = 1;
+                }
                 Product p = productDAO.getProductById(id);
-                cart.addProduct(p);
+                cart.addProduct(p, quantity); // Truyền số lượng vào đây
             } else if ("update".equals(action)) {
                 int productId = Integer.parseInt(req.getParameter("productId"));
                 int quantity = Integer.parseInt(req.getParameter("quantity"));

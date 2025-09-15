@@ -25,12 +25,15 @@ public class CartBean {
     }
 
     // thêm sản phẩm
-    public  void addProduct (Product p) {
-        for(CartItemBean item: items) {
-            if(item.getProduct().getId() == p.getId()) {
-                item.setQuantity((item.getQuantity() + 1));
+    public void addProduct(Product p, int quantity) {
+        for (CartItemBean item : items) {
+            if (item.getProduct().getId() == p.getId()) {
+                item.setQuantity(item.getQuantity() + quantity);
+                return;
             }
         }
+        // Nếu chưa có thì thêm mới
+        items.add(new CartItemBean(p, quantity));
     }
 
     // xóa sản phẩm

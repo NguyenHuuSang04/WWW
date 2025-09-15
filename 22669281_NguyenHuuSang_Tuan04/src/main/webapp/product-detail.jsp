@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
     <title>Product Detail</title>
@@ -29,7 +30,7 @@
             <li><b>Model:</b> ${product.model}</li>
             <li><b>Description:</b> ${product.description}</li>
             <li><b>Quantity:</b> ${product.quantity}</li>
-            <li><b>Price:</b> ${product.price}</li>
+            <li><b>Price: <fmt:formatNumber value="${product.price}" type="number" maxFractionDigits="0"/> VNĐ<br></li>
             <li>
                 <img src="${pageContext.request.contextPath}/images/${product.image}"
                      alt="${product.model}" width="150"/>
