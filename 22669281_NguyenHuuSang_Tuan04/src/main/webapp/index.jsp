@@ -8,6 +8,7 @@
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<a href="hello-servlet">Hello Servlet</a> <br>
+<a href="product">Bài 3:  JSPs – Thao tác với session</a>
 </body>
 </html>
