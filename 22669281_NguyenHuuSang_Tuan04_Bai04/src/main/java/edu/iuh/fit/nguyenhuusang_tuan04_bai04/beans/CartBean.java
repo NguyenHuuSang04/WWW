@@ -10,7 +10,15 @@ import java.util.List;
  * @Tác giả: Nguyen Huu Sang
  */
 public class CartBean {
-    private List<CartItemBean> items = new ArrayList<>();
+    private List<CartItemBean> items;
+
+    public CartBean(List<CartItemBean> items) {
+        this.items = items;
+    }
+
+    public CartBean() {
+        items = new ArrayList<>();
+    }
 
     public List<CartItemBean> getItems() {
         return items;

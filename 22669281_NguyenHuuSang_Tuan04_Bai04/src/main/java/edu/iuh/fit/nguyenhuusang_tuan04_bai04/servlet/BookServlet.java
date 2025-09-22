@@ -20,12 +20,11 @@ import java.util.List;
  * @Tạo vào ngày: 9/15/2025
  * @Tác giả: Nguyen Huu Sang
  */
-
 @WebServlet({"/books", "/book"})
 public class BookServlet extends HttpServlet {
     private BookDAO bookDAO;
 
-    @Resource(name = "jdbc/shopdb")
+    @Resource(name = "jdbc/bookdb")
     private DataSource dataSource;
 
     @Override
@@ -36,9 +35,10 @@ public class BookServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String id = req.getParameter("id");
+        String q = req.getParameter("q");
 
+        // Xem chi tiết sách
         if (id != null) {
-            // Hiển thị chi tiết sách
             Book book = bookDAO.getBookById(id);
             if (book != null) {
                 req.setAttribute("book", book);
@@ -50,8 +50,14 @@ public class BookServlet extends HttpServlet {
             return;
         }
 
-        // Hiển thị danh sách sách
-        List<Book> books = bookDAO.getAllBooks();
+        // Tìm kiếm (theo id hoặc tên)
+        List<Book> books;
+        if (q != null && !q.trim().isEmpty()) {
+            books = bookDAO.searchBooks(q.trim());
+        } else {
+            // Hiển thị tất cả sách nếu không tìm kiếm
+            books = bookDAO.getAllBooks();
+        }
         req.setAttribute("books", books);
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/danhsach.jsp");
         dispatcher.forward(req, resp);

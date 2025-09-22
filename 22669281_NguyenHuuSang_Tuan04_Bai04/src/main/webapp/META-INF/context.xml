@@ -1,6 +1,6 @@
 <Context>
     <Resource
-            name="jdbc/shopdb"
+            name="jdbc/bookdb"
             auth="Container"
             type="javax.sql.DataSource"
             maxTotal="20"

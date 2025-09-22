@@ -8,12 +8,6 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @Dự án: 22669281_NguyenHuuSang_Tuan04_Bai04
- * @Class: BookDAO
- * @Tạo vào ngày: 9/15/2025
- * @Tác giả: Nguyen Huu Sang
- */
 public class BookDAO {
     private DBUtil dbUtil;
 
@@ -21,9 +15,6 @@ public class BookDAO {
         dbUtil = new DBUtil(dataSource);
     }
 
-    /**
-     * Lấy tất cả sách từ database
-     */
     public List<Book> getAllBooks() {
         List<Book> list = new ArrayList<>();
         String sql = "SELECT * FROM books";
@@ -67,5 +58,32 @@ public class BookDAO {
             e.printStackTrace();
         }
         return null;
+    }
+
+    // Thêm phương thức tìm kiếm theo ID hoặc TITLE
+    public List<Book> searchBooks(String keyword) {
+        List<Book> list = new ArrayList<>();
+        String sql = "SELECT * FROM books WHERE id = ? OR LOWER(title) LIKE LOWER(?)";
+        try (Connection conn = dbUtil.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, keyword);
+            ps.setString(2, "%" + keyword + "%");
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    String id = rs.getString("id");
+                    String title = rs.getString("title");
+                    String author = rs.getString("author");
+                    double price = rs.getDouble("price");
+                    int quantity = rs.getInt("quantity");
+                    String image = rs.getString("imgurl");
+                    String description = rs.getString("description");
+                    Book b = new Book(id, title, author, price, quantity, image, description);
+                    list.add(b);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
     }
 }

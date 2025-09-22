@@ -2,6 +2,7 @@ package edu.iuh.fit.nguyenhuusang_tuan04_bai04.servlet;
 
 import edu.iuh.fit.nguyenhuusang_tuan04_bai04.beans.CartBean;
 import edu.iuh.fit.nguyenhuusang_tuan04_bai04.beans.Book;
+import edu.iuh.fit.nguyenhuusang_tuan04_bai04.beans.CartItemBean;
 import edu.iuh.fit.nguyenhuusang_tuan04_bai04.dao.BookDAO;
 
 import jakarta.annotation.Resource;
@@ -27,7 +28,7 @@ public class CartServlet extends HttpServlet {
 
     private BookDAO bookDAO;
 
-    @Resource(name = "jdbc/shopdb")
+    @Resource(name = "jdbc/bookdb")
     private DataSource dataSource;
 
     @Override
@@ -54,6 +55,7 @@ public class CartServlet extends HttpServlet {
         try {
             if ("add".equals(action)) {
                 String id = req.getParameter("id");
+                System.out.println("ID khi add: " + id); // THÊM DÒNG NÀY
                 int quantity = 1;
                 try {
                     String qtyStr = req.getParameter("quantity");
@@ -64,7 +66,13 @@ public class CartServlet extends HttpServlet {
                     quantity = 1;
                 }
                 Book book = bookDAO.getBookById(id);
+                if (book == null) System.out.println("Không tìm thấy sách với id: " + id);
+//                System.out.println("book khi add: " + book);
                 cart.addBook(book, quantity);
+//                System.out.println("Cart size after add: " + cart.getItems().size());
+//                for (CartItemBean item : cart.getItems()) {
+//                    System.out.println("Book in cart: " + item.getBook().getId() + ", Qty: " + item.getQuantity());
+//                }
             } else if ("update".equals(action)) {
                 String bookId = req.getParameter("bookId");
                 int quantity = Integer.parseInt(req.getParameter("quantity"));
