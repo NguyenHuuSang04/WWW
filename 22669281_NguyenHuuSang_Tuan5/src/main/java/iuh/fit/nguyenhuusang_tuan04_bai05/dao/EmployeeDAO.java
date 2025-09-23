@@ -112,4 +112,26 @@ public class EmployeeDAO {
             e.printStackTrace();
         }
     }
+
+    public Employee getEmployeeById(int id) {
+        String sql = "SELECT * FROM employees WHERE id=?";
+        try (
+                Connection conn = dbutil.getConnection();
+                PreparedStatement ps = conn.prepareStatement(sql)
+        ) {
+            ps.setInt(1, id);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    String name = rs.getString("name");
+                    double salary = rs.getDouble("salary");
+                    int deptId = rs.getInt("department_id");
+                    Department dept = departmentDAO.getDepartmentById(deptId);
+                    return new Employee(id, name, dept, salary);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

@@ -9,7 +9,7 @@
 </h1>
 <br/>
 <a href="hello-servlet">Hello Servlet</a><br>
-<a href="department-list.jsp">Department List</a> <br>
-<a href="employee-list.jsp">Employee List</a><br>
+<a href="departments">Department List</a> <br>
+<a href="employees">Employee List</a><br>
 </body>
 </html>

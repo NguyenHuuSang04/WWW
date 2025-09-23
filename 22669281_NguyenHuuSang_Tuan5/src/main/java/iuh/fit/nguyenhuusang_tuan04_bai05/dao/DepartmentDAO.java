@@ -36,6 +36,7 @@ public class DepartmentDAO {
         return list;
     }
 
+
     // Tìm kiếm phòng ban theo tên (LIKE)
     public List<Department> searchByName(String keyword) {
         List<Department> list = new ArrayList<>();

@@ -1,6 +1,5 @@
 package iuh.fit.nguyenhuusang_tuan04_bai05.servlet;
 
-
 import iuh.fit.nguyenhuusang_tuan04_bai05.dao.DepartmentDAO;
 import iuh.fit.nguyenhuusang_tuan04_bai05.dao.EmployeeDAO;
 import iuh.fit.nguyenhuusang_tuan04_bai05.model.Department;
@@ -16,9 +15,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.util.List;
+
 @WebServlet("/employees")
 public class EmployeServlet extends HttpServlet {
-    @Resource(name = "jdbc/hrdb")
+    @Resource(name = "jdbc/tuan04_bai05")
     private DataSource dataSource;
 
     private EmployeeDAO empDao;
@@ -28,8 +28,8 @@ public class EmployeServlet extends HttpServlet {
     public void init(ServletConfig servletConfig) throws ServletException {
         super.init(servletConfig);
         try {
-            empDao = new EmployeeDAO(dataSource);
             deptDao = new DepartmentDAO(dataSource);
+            empDao = new EmployeeDAO(dataSource, deptDao);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -38,11 +38,20 @@ public class EmployeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getParameter("action");
+        String deptId = req.getParameter("deptId");
+
         if (action == null) action = "List";
+
+        // Chỉ lọc employees theo deptId nếu action là List hoặc view
+        if ((action.equals("List") || action.equals("view")) && deptId != null && !deptId.isEmpty()) {
+            List<Employee> list = empDao.getAllByDepartment(Integer.parseInt(deptId));
+            req.setAttribute("employees", list);
+            req.getRequestDispatcher("employee-list.jsp").forward(req, resp);
+            return;
+        }
 
         switch (action) {
             case "List":
-                // Load toàn bộ employees (không quan tâm deptId)
                 List<Employee> allEmployees = empDao.getAllEmployees();
                 req.setAttribute("employees", allEmployees);
                 req.getRequestDispatcher("employee-list.jsp").forward(req, resp);
@@ -53,25 +62,44 @@ public class EmployeServlet extends HttpServlet {
                 break;
             case "edit":
                 int id = Integer.parseInt(req.getParameter("id"));
-                // Lấy employee theo id cho EmployeeDAO nếu muốn edit cụ thể
-                // code xử lý lấy employee đưa lên form edit...
+                Employee emp = empDao.getEmployeeById(id); // Bạn cần có hàm này
+                List<Department> depts = deptDao.getAll();
+                req.setAttribute("employee", emp);
+                req.setAttribute("departments", depts);
+                req.getRequestDispatcher("employee-form.jsp").forward(req, resp);
                 break;
             case "delete":
                 empDao.delete(Integer.parseInt(req.getParameter("id")));
                 resp.sendRedirect("employees");
                 break;
             case "view":
-                // Hiển thị list all employees (or by department)
-                String deptId = req.getParameter("deptId");
-                List<Employee> list;
-                if (deptId != null) {
-                    list = empDao.getAllByDepartment(Integer.parseInt(deptId));
-                } else {
-                    list = empDao.getAllByDepartment(1); // mặc định dept 1
-                }
-                req.setAttribute("employees", list);
-                req.getRequestDispatcher("employee-list.jsp").forward(req, resp);
+                // Đã xử lý ở đầu hàm (tránh lặp)
                 break;
+            case "new":
+                String deptIdParam = req.getParameter("deptId");
+                if (deptIdParam != null && !deptIdParam.isEmpty()) {
+                    try {
+                        int deptIdInt = Integer.parseInt(deptIdParam);
+                        Department dept = deptDao.getDepartmentById(deptIdInt);
+                        req.setAttribute("department", dept); // chỉ truyền 1 phòng ban
+                        req.setAttribute("fixedDept", true); // báo cho JSP biết là chỉ được dùng 1 phòng ban này
+                    } catch (NumberFormatException ex) {
+                        List<Department> departments = deptDao.getAll();
+                        req.setAttribute("departments", departments);
+                        req.setAttribute("fixedDept", false);
+                    }
+                } else {
+                    List<Department> departments = deptDao.getAll();
+                    req.setAttribute("departments", departments);
+                    req.setAttribute("fixedDept", false);
+                }
+                req.getRequestDispatcher("employee-form.jsp").forward(req, resp);
+                break;
+            default:
+                // Nếu action không hợp lệ, về danh sách tất cả nhân viên
+                List<Employee> defaultEmployees = empDao.getAllEmployees();
+                req.setAttribute("employees", defaultEmployees);
+                req.getRequestDispatcher("employee-list.jsp").forward(req, resp);
         }
     }
 

@@ -71,7 +71,16 @@
     <img class="banner-img" src="${pageContext.request.contextPath}/images/HRbanner.jpg" alt="HR Banner" height="180"/>
     <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
         <h2 class="mb-0">Employees List</h2>
-        <a class="add-link" href="${pageContext.request.contextPath}/employees?action=new">+ Add Employee</a>
+        <c:choose>
+            <c:when test="${not empty param.deptId}">
+                <a class="add-link"
+                   href="${pageContext.request.contextPath}/employees?action=new&deptId=${param.deptId}">+ Add Employee</a>
+            </c:when>
+            <c:otherwise>
+                <a class="add-link"
+                   href="${pageContext.request.contextPath}/employees?action=new">+ Add Employee</a>
+            </c:otherwise>
+        </c:choose>
     </div>
     <table class="table table-bordered table-hover table-primary align-middle">
         <thead class="table-light">

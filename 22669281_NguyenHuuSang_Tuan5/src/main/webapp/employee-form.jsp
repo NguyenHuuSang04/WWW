@@ -70,14 +70,23 @@
         </div>
         <div class="mb-3">
             <label for="departmentId" class="form-label">Department:</label>
-            <select id="departmentId" name="departmentId" class="form-select" required>
-                <option value="">-- Select Department --</option>
-                <c:forEach var="dep" items="${departments}">
-                    <option value="${dep.id}"
-                            <c:if test="${employee != null && employee.department != null && employee.department.id == dep.id}">selected</c:if>
-                    >${dep.name}</option>
-                </c:forEach>
-            </select>
+            <c:choose>
+                <c:when test="${fixedDept}">
+                    <!-- Chỉ cho chọn đúng 1 phòng ban, không được đổi -->
+                    <input type="hidden" name="departmentId" value="${department.id}"/>
+                    <input class="form-control" value="${department.name}" disabled/>
+                </c:when>
+                <c:otherwise>
+                    <select id="departmentId" name="departmentId" class="form-select" required>
+                        <option value="">-- Select Department --</option>
+                        <c:forEach var="dep" items="${departments}">
+                            <option value="${dep.id}"
+                                    <c:if test="${employee != null && employee.department != null && employee.department.id == dep.id}">selected</c:if>
+                            >${dep.name}</option>
+                        </c:forEach>
+                    </select>
+                </c:otherwise>
+            </c:choose>
         </div>
         <div class="text-center">
             <button type="submit" class="btn btn-save">Save</button>

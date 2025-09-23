@@ -10,55 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64ac063c-d023-412b-b294-b55046b69fc4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/webapp/chitietsach.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/webapp/giohang.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/webapp/thanhtoan.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan03.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04/beans/CartBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04/beans/CartItemBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04/beans/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04/dao/ProductDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04/servlet/CartServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04/servlet/ProductServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04/util/DBUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/applewatch9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/dellxps13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/findx7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/galaxys24ultra.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/ipadpro12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/iphone15promax.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/macbookairm2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/mxmaster3s.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sonyxm5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/xiaomi14ultra.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/product-detail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/product-list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04_bai04/beans/CartBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04_bai04/beans/CartBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04_bai04/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04_bai04/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04_bai04/servlet/BookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04_bai04/servlet/BookServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04_bai04/servlet/CartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04_bai04/servlet/CartServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04_bai04/util/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/java/edu/iuh/fit/nguyenhuusang_tuan04_bai04/util/DBUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/webapp/danhsach.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan04_Bai04/src/main/webapp/danhsach.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,23 +62,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 11.0.10.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HPP/Documents/1_Programme/7_TRENLOP/Nam_4_HK1/WWW/ThucHanh/22669281_NguyenHuuSang_Tuan04_Bai04&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Tomcat Server.Tomcat 11.0.10.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HPP/Documents/1_Programme/7_TRENLOP/Nam_4_HK1/WWW/ThucHanh/22669281_NguyenHuuSang_Tuan5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HPP\Documents\1_Programme\7_TRENLOP\Nam_4_HK1\WWW\ThucHanh\22669281_NguyenHuuSang_Tuan04\src\main\webapp" />
@@ -203,6 +155,9 @@
       <workItem from="1757914818711" duration="7538000" />
       <workItem from="1757927435133" duration="870000" />
       <workItem from="1758448429941" duration="33000" />
+      <workItem from="1758520662936" duration="580000" />
+      <workItem from="1758597570550" duration="10000" />
+      <workItem from="1758615707025" duration="16000" />
     </task>
     <servers />
   </component>
