@@ -47,22 +47,22 @@ public class DepartmentServlet extends HttpServlet {
         if(action==null) action= "list";
 
         switch (action) {
-            case "list":
-                // load
+            case "list":// getAll
                 List<Department> departments = departmentDAO.getAllDepartment();
                 req.setAttribute("departments", departments);
                 req.getRequestDispatcher("department-list.jsp").forward(req, resp);
                 break;
-            case "new":
+            case "new":// C
                 req.getRequestDispatcher("department-form.jsp").forward(req, resp);
-            case "edit":
+                break;
+            case "edit": // U
                 String deptId = req.getParameter("id");
                 Department department = departmentDAO.getDepartmentByID(deptId);
 
                 req.setAttribute("department", department);
                 req.getRequestDispatcher("department-form.jsp").forward(req,resp);
                 break;
-            case "delete":
+            case "delete": // D
                 departmentDAO.removeDepartment(req.getParameter("id"));
                 resp.sendRedirect("departments");
                 break;

@@ -43,6 +43,8 @@ public class CartServlet extends HttpServlet {
         req.getRequestDispatcher("cart.jsp").forward(req, resp);
     }
 
+
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();// lấy sess hiện tại của user ( chưa có thì tạo mới) dùng để lưu cart

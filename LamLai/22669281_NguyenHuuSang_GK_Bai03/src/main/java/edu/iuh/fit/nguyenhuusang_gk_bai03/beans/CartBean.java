@@ -36,7 +36,6 @@ public class CartBean {
                 return;
             }
         }
-
         items.add(new CartItemBean(p, 1));// nếu item chưa có trong giỏ thì thêm item đó vào với quality là 1
     }
 
@@ -57,7 +56,6 @@ public class CartBean {
                 return;
             }
         }
-
     }
 
     // tính tổng tiền

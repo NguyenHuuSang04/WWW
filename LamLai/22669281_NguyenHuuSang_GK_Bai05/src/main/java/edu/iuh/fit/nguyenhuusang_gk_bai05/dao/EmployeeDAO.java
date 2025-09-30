@@ -132,9 +132,7 @@ public class EmployeeDAO {
         // update
     public void updateEmployee(Employee employee) {
         double salary = employee.getSalary();
-        String sql = "UPDATE employees " +
-                "SET name=?, department_id=?, salary=? " +
-                "WHERE id=?";
+        String sql = "UPDATE employees SET name=?, department_id=?, salary=? WHERE id=?";
 
         try (Connection connection = dbUtil.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {

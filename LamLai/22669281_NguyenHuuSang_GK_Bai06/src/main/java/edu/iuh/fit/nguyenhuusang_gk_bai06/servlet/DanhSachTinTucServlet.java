@@ -13,6 +13,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import javax.sql.DataSource;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -43,6 +44,8 @@ public class DanhSachTinTucServlet extends HttpServlet {
         switch (action) {
             case "list": // R
                 List<TinTuc> tinTucs = danhSachTinTucQuanLyDAO.getAllTinTuc();
+                List<DanhMuc> danhMucs = danhMucDAO.getAllDanhMuc();
+                req.setAttribute("danhmucs", danhMucs);;
                 req.setAttribute("tintucs", tinTucs);
                 req.getRequestDispatcher("tintuc-list.jsp").forward(req,resp);;
                 break;
@@ -51,6 +54,19 @@ public class DanhSachTinTucServlet extends HttpServlet {
 //                req.setAttribute("danhMucs", danhMucs);
 //                req.getRequestDispatcher("tintuc-form.jsp").forward(req, resp);
 //                break;
+            case "listByDanhMuc":
+                String idDanhMuc = req.getParameter("idDM");
+                List<TinTuc> tinTucList = new ArrayList<>();
+                if(idDanhMuc!=null && !idDanhMuc.isEmpty()) {
+                    tinTucList = danhSachTinTucQuanLyDAO.getTinTucByDanhMuc(idDanhMuc);
+                } else {
+                    tinTucList = danhSachTinTucQuanLyDAO.getAllTinTuc();
+                }
+                List<DanhMuc> danhMucss = danhMucDAO.getAllDanhMuc();
+                req.setAttribute("danhmucs", danhMucss);;
+                req.setAttribute("tintucs", tinTucList);
+                req.getRequestDispatcher("tintuc-list.jsp").forward(req, resp);
+                break;
 
         }
 

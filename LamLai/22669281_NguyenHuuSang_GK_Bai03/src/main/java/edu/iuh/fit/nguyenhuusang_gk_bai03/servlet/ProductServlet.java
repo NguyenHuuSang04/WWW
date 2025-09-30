@@ -51,8 +51,9 @@ public class ProductServlet extends HttpServlet {
             Product product = productDAO.getProductById(id);// gọi DAO tìm
             if(product!=null) {// nếu tìm thấy
                 req.setAttribute("product", product);// đưa đối tượng vào resquest để JSP hiển thị
-                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/product-detail.jsp");// lấy dispacher trỏ đến trang (/..)
-                dispatcher.forward(req, resp);// hướng hướng nội bộ (forward ) đến trang (/...) ( product-detail)
+//                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/product-detail.jsp");// lấy dispacher trỏ đến trang (/..)
+//                dispatcher.forward(req, resp);// hướng hướng nội bộ (forward ) đến trang (/...) ( product-detail)
+                req.getRequestDispatcher("/product-detail.jsp").forward(req, resp);
             } else {// nếu không tìm thấy
                 resp.sendError(HttpServletResponse.SC_NOT_FOUND, "Product not found");
                 return;
@@ -60,8 +61,9 @@ public class ProductServlet extends HttpServlet {
         }
         List<Product> products = productDAO.getAllProducts();// nếu không có id --> tức là người dùng chỉ vào /products
         req.setAttribute("products", products);
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/product-list.jsp");
-        dispatcher.forward(req, resp);
+//        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/product-list.jsp");
+//        dispatcher.forward(req, resp);
+        req.getRequestDispatcher("/product-list.jsp").forward(req, resp);
     }
 
 

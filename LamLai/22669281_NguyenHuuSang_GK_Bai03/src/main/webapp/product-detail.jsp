@@ -22,7 +22,6 @@
         <li>Price: ${product.price}</li>
         <img src="${pageContext.request.contextPath}/images/${product.imgurl}" alt ="${product.model}" width = "150">
     </ul>
-
 </c:if>
 <p>
     <a href="${pageContext.request.contextPath}/product">Back to ProductList</a>

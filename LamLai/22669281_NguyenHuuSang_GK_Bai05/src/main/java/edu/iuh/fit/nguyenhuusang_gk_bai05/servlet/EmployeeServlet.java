@@ -105,6 +105,7 @@ public class EmployeeServlet extends HttpServlet {
                 req.setAttribute("employees", list);
                 req.setAttribute("departments", departmentDAO.getAllDepartment());
                 req.getRequestDispatcher("employee-list.jsp").forward(req, resp);
+                break;
         }
     }
 

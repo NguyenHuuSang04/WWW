@@ -58,13 +58,10 @@
                 <c:forEach items="${danhMucs}" var="danhMuc">
                     <option value="${danhMuc.maDM}">
                         ${danhMuc.tenDM}
-                    </option>
-
+                    </option
                 </c:forEach>
-
             </select>
         <input type="submit" value="save">
-
     </form>
 </body>
 </html>

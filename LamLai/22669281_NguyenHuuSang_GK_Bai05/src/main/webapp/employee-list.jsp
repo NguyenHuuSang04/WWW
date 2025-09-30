@@ -23,10 +23,6 @@
             </c:otherwise>
         </c:choose>
 
-
-
-
-
         <table class="table table-primary">
             <tr>
                 <th>ID</th>
@@ -38,14 +34,14 @@
 
             <c:forEach var="emp" items="${employees}">
                 <tr>
-                    <th>${emp.id}</th>
-                    <th>${emp.name}</th>
-                    <th>${emp.salary}</th>
-                    <th>${emp.departments.name}</th>
-                    <th>
+                    <td>${emp.id}</td>
+                    <td>${emp.name}</td>
+                    <td>${emp.salary}</td>
+                    <td>${emp.departments.name}</td>
+                    <td>
                         <a href="${pageContext.request.contextPath}/employees?action=edit&id=${emp.id}">Edit</a> |
                         <a href="${pageContext.request.contextPath}/employees?action=delete&id=${emp.id}">Delete</a>
-                    </th>
+                    </td>
                 </tr>
             </c:forEach>
         </table>

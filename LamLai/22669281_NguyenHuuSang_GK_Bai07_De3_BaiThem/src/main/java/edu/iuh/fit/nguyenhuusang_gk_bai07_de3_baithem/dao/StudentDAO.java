@@ -38,7 +38,7 @@ public class StudentDAO {
                 String major = resultSet.getString("major");
                 Integer enrollmentYear = resultSet.getInt("enrollment_year");
                 String status = resultSet.getString("status");
-                LocalDate createDate = resultSet.getDate("create_Date").toLocalDate();
+                LocalDate createDate = resultSet.getDate("created_date").toLocalDate();
 
                 Student student = new Student(id, fullName, email, phone, className, major, enrollmentYear, status, createDate);
                 students.add(student);
@@ -53,13 +53,13 @@ public class StudentDAO {
 
     // R tìm theo mã sv
     public Student getStudentByID(String id) {
-        String sql = "SELECT * FROM students WHERE students = ?";
-        try (Connection connection = dbUtil.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+        String sql = "SELECT * FROM students WHERE student_id = ?";
+        try(Connection connection = dbUtil.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setString(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                String stId = resultSet.getString("student_id");
+                String idst = resultSet.getString("student_id");
                 String fullName = resultSet.getString("full_name");
                 String email = resultSet.getString("email");
                 String phone = resultSet.getString("phone");
@@ -67,15 +67,16 @@ public class StudentDAO {
                 String major = resultSet.getString("major");
                 Integer enrollmentYear = resultSet.getInt("enrollment_year");
                 String status = resultSet.getString("status");
-                LocalDate createDate = resultSet.getDate("create_Date").toLocalDate();
+                LocalDate createDate = resultSet.getDate("created_date").toLocalDate();
 
-                Student student = new Student(stId, fullName, email, phone, className, major, enrollmentYear, status, createDate);
+                Student student = new Student(idst, fullName, email, phone, className, major, enrollmentYear, status, createDate);
                 return student;
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
         return null;
+
     }
 
     // R theo teen
@@ -96,7 +97,7 @@ public class StudentDAO {
                 String major = resultSet.getString("major");
                 Integer enrollmentYear = resultSet.getInt("enrollment_year");
                 String status = resultSet.getString("status");
-                LocalDate createDate = resultSet.getDate("create_Date").toLocalDate();
+                LocalDate createDate = resultSet.getDate("created_date").toLocalDate();
 
                 Student student = new Student(id, fullName, email, phone, className, major, enrollmentYear, status, createDate);
                 students.add(student);
@@ -207,5 +208,12 @@ public class StudentDAO {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void removeStudent(String studentId) {
+
+    }
+
+    public void updateStudent(Student student) {
     }
 }

@@ -16,8 +16,6 @@
             <input type="hidden" name="id" value="${department.id}">
             Name: <input type="text" name="name" value="${department.name}"> <br>
             <input type="submit" value="Save">
-
-
         </form>
     </div>
 </body>

@@ -14,6 +14,18 @@
 <body>
 <a href="${pageContext.request.contextPath}/tintucform?action=new">Thêm tin tức</a>
 <a href="${pageContext.request.contextPath}/quanlyform">Quản lý tin tức</a>
+
+<form method="get" action="${pageContext.request.contextPath}/tintucs">
+    <input type="hidden" name="action" value="listByDanhMuc"/>
+    <label for="idDM">Lọc theo danh mục:</label>
+    <select name="idDM" id="idDM" onchange="this.form.submit()">
+        <option value="">Tất cả</option>
+        <c:forEach items="${danhmucs}" var="dm">
+            <option value="${dm.maDM}" <c:if test="${param.idDM == dm.maDM}">selected</c:if>>${dm.tenDM}</option>
+        </c:forEach>
+    </select>
+</form>
+
 <table class="table table-primary">
     <tr>
         <th>Mã Tin tức</th>

@@ -17,17 +17,6 @@
             <input type="hidden" name="id" value="${employee.id}">
             Name: <input type="text" name="name" value="${employee.name}"> <br>
             Salary: <input type="text" name="salary" value="${employee.salary}"> <br>
-<%--            Department:--%>
-<%--            <select name="departmentId">--%>
-<%--                <c:forEach var = "dept" items="${departments}">--%>
-<%--                    <option value="${dept.id}"--%>
-<%--                            <c:if test="${employee != null && dept.id == employee.departments.id}">selected</c:if>--%>
-<%--                    >${dept.name}</option>--%>
-
-<%--                </c:forEach>--%>
-
-<%--            </select>--%>
-
             <c:if test="${fixDept}">
                 <input type="hidden" name="departmentId" value="${selectedDept.id}">
                 Department:

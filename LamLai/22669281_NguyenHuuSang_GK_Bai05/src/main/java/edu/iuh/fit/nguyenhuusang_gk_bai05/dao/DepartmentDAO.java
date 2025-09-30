@@ -17,17 +17,14 @@ import java.util.List;
  */
 // tìm theo tên, thêm,sửa, xóa, thêm emp vào
 public class DepartmentDAO {
-    private DBUtil dbUtil;
+    private DBUtil dbUtil; // khai báo private
 
-    public DepartmentDAO(DataSource dataSource) {
+    public DepartmentDAO(DataSource dataSource) { // -	Contructor dao(DataSource dataSouce)
+
         dbUtil = new DBUtil(dataSource);
     }
 
     public DepartmentDAO() {
-    }
-
-    public DepartmentDAO(DBUtil dbUtil) {
-        this.dbUtil = dbUtil;
     }
 
 
@@ -46,7 +43,6 @@ public class DepartmentDAO {
                     return department;
                 }
             }
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -69,11 +65,9 @@ public class DepartmentDAO {
 
                 departments.add(department);
             }
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
         return departments;
     }
 
@@ -92,9 +86,7 @@ public class DepartmentDAO {
 
     // Update
     public void updateDepartment(Department department) {
-        String sql = "UPDATE departments " +
-                "SET name=?" +
-                "WHERE id=?";
+        String sql = "UPDATE departments SET name=? WHERE id=?";
         try (Connection connection = dbUtil.getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setString(1, department.getName());
