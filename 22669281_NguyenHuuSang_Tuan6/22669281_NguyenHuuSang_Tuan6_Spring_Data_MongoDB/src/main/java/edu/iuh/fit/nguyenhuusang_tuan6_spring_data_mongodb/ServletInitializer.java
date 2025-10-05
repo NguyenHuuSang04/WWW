@@ -1,0 +1,17 @@
+package edu.iuh.fit.nguyenhuusang_tuan6_spring_data_mongodb;
+
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+/**
+ * @Dự án: 22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB
+ * @Class: ServletInitializer
+ * @Tạo vào ngày: 10/5/2025
+ * @Tác giả: Nguyen Huu Sang
+ */
+public class ServletInitializer extends SpringBootServletInitializer {
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(Application.class);
+    }
+}
