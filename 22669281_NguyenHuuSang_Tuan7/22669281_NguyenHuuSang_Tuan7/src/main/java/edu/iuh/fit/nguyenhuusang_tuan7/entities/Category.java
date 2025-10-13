@@ -1,34 +1,31 @@
 package edu.iuh.fit.nguyenhuusang_tuan7.entities;
 
-import java.time.LocalDate;
 import jakarta.persistence.*;
 import lombok.*;
-import java.util.Calendar;
+
 import java.util.List;
+
+
 /**
  * @Dự án: 22669281_NguyenHuuSang_Tuan7
- * @Class: Customer
+ * @Class: Category
  * @Tạo vào ngày: 10/13/2025
  * @Tác giả: Nguyen Huu Sang
  */
 
 @Entity
-@Table(name = "customer")
+@Table(name = "category")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString(exclude = "orders")
-public class Customer {
+@ToString(exclude = "products")
+public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;
 
-    @Temporal(TemporalType.DATE)
-    private Calendar customerSince;
-
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
-    private List<Order> orders;
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    private List<Product> products;
 }
-
