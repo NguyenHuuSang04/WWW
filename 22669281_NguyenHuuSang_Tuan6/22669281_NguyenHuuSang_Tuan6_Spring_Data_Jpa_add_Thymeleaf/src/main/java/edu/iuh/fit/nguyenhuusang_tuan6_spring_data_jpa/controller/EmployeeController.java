@@ -62,7 +62,7 @@ public class EmployeeController {
 
     @PostMapping("/edit/{id}")
     public String editEmployee(@PathVariable String id, @ModelAttribute Employee employee) {
-        employee.setEmpId(id);
+        employee.setEmpId(id); // form không nhập id, phải set id từ URL cho emp vừa đc nhập từ form
         Department dept = departmentService.getById(employee.getDeptId().getDeptId());
         employee.setDeptId(dept);
         service.save(employee);
