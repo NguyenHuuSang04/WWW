@@ -14,6 +14,8 @@ import java.util.List;
  * @Tạo vào ngày: 10/5/2025
  * @Tác giả: Nguyen Huu Sang
  */
+
+// chứa logic về phân tích dữ liệu emp ( vọi nv lương cao nhất, lớn tuổi nhất ... )
 @Service
 public class EmployeeAnalyticsService {
     private final EmployeeAnalyticsRepository employeeAnalyticsRepository;

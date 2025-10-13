@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thêm/Sửa phòng ban</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0" th:text="${department.deptId == null} ? 'Thêm phòng ban' : 'Sửa phòng ban'"></h2>
+                </div>
+                <div class="card-body">
+                    <form th:action="${department.deptId == null} ? @{/departments/add} : @{/departments/edit/{id}(id=${department.deptId})}"
+                          th:object="${department}" method="post">
+                        <div class="mb-3">
+                            <label class="form-label">Mã phòng ban:</label>
+                            <input type="text" class="form-control" th:field="*{deptId}" th:readonly="${department.deptId != null}"/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tên phòng ban:</label>
+                            <input type="text" class="form-control" th:field="*{deptName}" />
+                        </div>
+                        <button type="submit" class="btn btn-success">Lưu</button>
+                        <a th:href="@{/departments}" class="btn btn-secondary ms-2">Quay lại danh sách</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap JS Bundle (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

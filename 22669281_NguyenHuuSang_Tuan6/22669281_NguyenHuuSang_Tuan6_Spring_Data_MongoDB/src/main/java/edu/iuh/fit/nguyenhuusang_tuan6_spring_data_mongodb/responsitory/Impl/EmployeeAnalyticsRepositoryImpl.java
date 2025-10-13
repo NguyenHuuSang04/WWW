@@ -20,6 +20,7 @@ import static org.springframework.data.mongodb.core.aggregation.Aggregation.*;
  * @Tạo vào ngày: 10/5/2025
  * @Tác giả: Nguyen Huu Sang
  */
+// thực thi phương thức analytics sử dụng aggregation pipeline cảu mongodb
 @Repository
 public class EmployeeAnalyticsRepositoryImpl implements EmployeeAnalyticsRepository {
 

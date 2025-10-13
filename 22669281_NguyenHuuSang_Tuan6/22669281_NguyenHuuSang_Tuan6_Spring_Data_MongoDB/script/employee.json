@@ -1,0 +1,38 @@
+[
+  {
+    "empId": "E001",
+    "empName": "Nguyen Van A",
+    "email": "a@company.com",
+    "age": 30,
+    "salary": 1500.0,
+    "status": 1,
+    "deptId": "D001"
+  },
+  {
+    "empId": "E002",
+    "empName": "Tran Thi B",
+    "email": "b@company.com",
+    "age": 28,
+    "salary": 1800.0,
+    "status": 1,
+    "deptId": "D002"
+  },
+  {
+    "empId": "E003",
+    "empName": "Le Van C",
+    "email": "c@company.com",
+    "age": 35,
+    "salary": 2000.0,
+    "status": 0,
+    "deptId": "D003"
+  },
+  {
+    "empId": "E004",
+    "empName": "Pham Thi D",
+    "email": "d@company.com",
+    "age": 25,
+    "salary": 1600.0,
+    "status": 1,
+    "deptId": "D002"
+  }
+]

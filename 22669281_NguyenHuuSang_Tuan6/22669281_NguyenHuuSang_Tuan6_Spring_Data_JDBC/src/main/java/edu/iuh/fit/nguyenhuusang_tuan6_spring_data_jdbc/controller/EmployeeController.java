@@ -13,6 +13,7 @@ import java.util.List;
  * @Tạo vào ngày: 10/4/2025
  * @Tác giả: Nguyen Huu Sang
  */
+// nhận request từ client
 @RestController
 @RequestMapping("/employees")
 public class EmployeeController {

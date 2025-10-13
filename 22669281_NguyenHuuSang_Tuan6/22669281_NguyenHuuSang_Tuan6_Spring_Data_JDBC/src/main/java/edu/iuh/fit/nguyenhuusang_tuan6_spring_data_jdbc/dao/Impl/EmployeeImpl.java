@@ -26,6 +26,8 @@ public class EmployeeImpl implements EmployeeDAO {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    //RowMapper: chuyển đổi từng dòng resultSet thành 1 đối tượng java cụ thể
+    // ánh xạ emp và đầy đủ thông tin của dept
     //RowMapper mối quan hệ 1 - n: ánh xạ emp + dept
     private final RowMapper<Employee> rowMapperWithDept = (rs, rowNum) -> {
         Department dept = new Department(
@@ -43,6 +45,7 @@ public class EmployeeImpl implements EmployeeDAO {
         );
     };
 
+    // ánh xạ emp chỉ với deptID không có deptName
     // RowMapper ánh xạ emp cần deptID ( không join )
     private final RowMapper<Employee> rowMapper = (rs, rowNum) -> new Employee(
             rs.getString("empId"),

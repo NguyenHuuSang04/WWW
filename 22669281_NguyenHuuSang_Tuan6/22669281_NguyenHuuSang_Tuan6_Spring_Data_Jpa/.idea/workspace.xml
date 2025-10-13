@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3f58171-ce29-49ec-8630-9e4faa16f63d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_JDBC/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jdbc/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_JDBC/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jdbc/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_JDBC/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jdbc/dao/Impl/EmployeeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_JDBC/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jdbc/dao/Impl/EmployeeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jpa/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jpa/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jpa/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jpa/model/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jpa/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jpa/responsitory/EmployeeReponsitory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jpa/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/import.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_jpa/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_mongodb/DTO/AvgSalaryByDeptIdDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_mongodb/DTO/AvgSalaryByDeptIdDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_mongodb/responsitory/EmployeeAnalyticsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_mongodb/responsitory/EmployeeAnalyticsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_mongodb/responsitory/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_mongodb/responsitory/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_mongodb/responsitory/Impl/EmployeeAnalyticsRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_mongodb/responsitory/Impl/EmployeeAnalyticsRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_mongodb/service/EmployeeAnalyticsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../22669281_NguyenHuuSang_Tuan6_Spring_Data_MongoDB/src/main/java/edu/iuh/fit/nguyenhuusang_tuan6_spring_data_mongodb/service/EmployeeAnalyticsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/README.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/DTO/AvgAgeByStatusDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/DTO/AvgSalaryByDeptIdDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/model/Deparment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/repository/EmployeeAnalyticsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/repository/EmployeeAnalyticsRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/service/EmployeeAnalyticsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/java/fit/se/luongminhtan_springjpa/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_MongoDB/src/test/java/fit/se/luongminhtan_springjpa/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/script/script.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/dao/EmployeeDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/dao/EmployeeDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/model/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringDBC/src/test/java/fit/se/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/model/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/sevice/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/src/main/resources/import.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_BaiTapVeNhaSpring/22677941_LuongMinhTan_SpringJPA/src/test/java/fit/se/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/dao/EmployeeDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/dao/EmployeeDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/model/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/src/main/java/fit/se/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringDBC/src/test/java/fit/se/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/model/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/src/main/java/fit/se/sevice/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/src/main/resources/import.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../22677941_LuongMinhTan_SpringJPA/src/test/java/fit/se/ApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NguyenHuuSang04&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NguyenHuuSang04/WWW.git&quot;,
+    &quot;accountId&quot;: &quot;e28e6b6e-d1ac-48f5-ad36-7cd82c54fb88&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="33bbjgrggDCFEQjYb7YgdWwroNH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.Application.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HPP/Documents/1_Programme/7_TRENLOP/Nam_4_HK1/WWW/ThucHanh/22669281_NguyenHuuSang_Tuan6/22669281_NguyenHuuSang_Tuan6_Spring_Data_Jpa_add_Thymeleaf",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HPP\Documents\1_Programme\7_TRENLOP\Nam_4_HK1\WWW\ThucHanh\22669281_NguyenHuuSang_Tuan6\22669281_NguyenHuuSang_Tuan6_Spring_Data_Jpa\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="22669281_NguyenHuuSang_Tuan6_Spring_Data_Jpa" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="NguyenHuuSang_Tuan6_Spring_Data_Jpa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.iuh.fit.nguyenhuusang_tuan6_spring_data_jpa.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3f58171-ce29-49ec-8630-9e4faa16f63d" name="Changes" comment="" />
+      <created>1759588859494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759588859494</updated>
+      <workItem from="1759588860758" duration="4083000" />
+      <workItem from="1759633458684" duration="32000" />
+      <workItem from="1759717840748" duration="1168000" />
+      <workItem from="1759729722583" duration="6985000" />
+      <workItem from="1760103254789" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

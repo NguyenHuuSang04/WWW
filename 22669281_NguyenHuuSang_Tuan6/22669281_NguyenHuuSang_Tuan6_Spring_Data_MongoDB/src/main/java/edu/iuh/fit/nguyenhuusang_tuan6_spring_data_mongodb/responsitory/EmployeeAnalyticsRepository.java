@@ -11,6 +11,7 @@ import java.util.List;
  * @Tạo vào ngày: 10/5/2025
  * @Tác giả: Nguyen Huu Sang
  */
+// các ham fphana tích dữ liệu như
 public interface EmployeeAnalyticsRepository {
 
     // Đếm số nhân viên theo từng mã phòng ban và tính lương trung bình trong mỗi phòng ban

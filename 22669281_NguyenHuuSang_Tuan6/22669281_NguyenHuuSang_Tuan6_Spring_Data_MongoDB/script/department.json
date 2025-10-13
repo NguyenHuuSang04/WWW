@@ -1,0 +1,17 @@
+[
+  {
+    "deptId": "D001",
+    "deptName": "Phòng Nhân Sự",
+    "employees": []
+  },
+  {
+    "deptId": "D002",
+    "deptName": "Phòng Kỹ Thuật",
+    "employees": []
+  },
+  {
+    "deptId": "D003",
+    "deptName": "Phòng Kinh Doanh",
+    "employees": []
+  }
+]
