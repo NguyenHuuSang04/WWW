@@ -27,6 +27,7 @@
             <ul>
                 <li th:each="c : ${product.comments}" th:text="${c.text}"></li>
             </ul>
+            <a th:href="@{/products/{id}/comments/add(id=${product.id})}" class="btn btn-primary btn-sm">Thêm bình luận</a>
             <a th:href="@{/products}" class="btn btn-secondary">Quay lại danh sách</a>
         </div>
     </div>
