@@ -2,24 +2,34 @@ package edu.iuh.fit.nguyenhuusang_tuan7.controller;
 
 import edu.iuh.fit.nguyenhuusang_tuan7.entities.Product;
 import edu.iuh.fit.nguyenhuusang_tuan7.services.ProductService;
+import edu.iuh.fit.nguyenhuusang_tuan7.services.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
+import java.util.UUID;
 
-/**
- * @Dự án: 22669281_NguyenHuuSang_Tuan7
- * @Class: ProductController
- * @Tạo vào ngày: 10/13/2025
- * @Tác giả: Nguyen Huu Sang
- */
 @Controller
 @RequestMapping("/products")
 public class ProductController {
     @Autowired
     private ProductService productService;
+
+    @Autowired
+    private CategoryService categoryService;
+
+    // Đường dẫn thư mục upload được cấu hình trong application.properties
+    @Value("${file.upload-dir:uploads}")
+    private String uploadDir;
 
     // Hiển thị toàn bộ sản phẩm
     @GetMapping
@@ -37,35 +47,66 @@ public class ProductController {
         return "product/product-detail";
     }
 
-    // Thêm sản phẩm
+    // Hiển thị form thêm sản phẩm
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/add")
     public String showAddForm(Model model) {
         model.addAttribute("product", new Product());
+        model.addAttribute("categories", categoryService.findAll());
         return "product/product-form";
     }
 
+    // Lưu sản phẩm mới
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/add")
-    public String addProduct(@ModelAttribute Product product) {
+    public String addProduct(@ModelAttribute Product product,
+                             @RequestParam("fileImage") MultipartFile file) throws IOException {
+        if (!file.isEmpty()) {
+            // Sử dụng cấu hình uploadDir từ application.properties
+            String fileName = UUID.randomUUID() + "_" + file.getOriginalFilename();
+            Path uploadPath = Paths.get(uploadDir);
+            Files.createDirectories(uploadPath); // Tạo thư mục nếu chưa tồn tại
+            file.transferTo(uploadPath.resolve(fileName)); // Lưu file vào thư mục cấu hình
+            product.setImage(fileName); // Lưu tên file vào database
+        }
         productService.saveProduct(product);
         return "redirect:/products";
     }
 
-    // Sửa sản phẩm
+    // Hiển thị form chỉnh sửa sản phẩm
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/edit/{id}")
-    public String showEditForm(@PathVariable Integer id, Model model) {
+    public String showEditForm(@PathVariable("id") Integer id, Model model) {
         Product product = productService.getProductById(id);
         model.addAttribute("product", product);
+        model.addAttribute("categories", categoryService.findAll());
         return "product/product-form";
     }
 
+    // Cập nhật sản phẩm
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/edit/{id}")
-    public String editProduct(@PathVariable Integer id, @ModelAttribute Product product) {
-        product.setId(id);
+    public String editProduct(@PathVariable Integer id, @ModelAttribute Product product,
+                              @RequestParam("fileImage") MultipartFile file) throws IOException {
+        if (!file.isEmpty()) {
+            String fileName = UUID.randomUUID() + "_" + file.getOriginalFilename();
+            Path uploadPath = Paths.get(uploadDir);
+            Files.createDirectories(uploadPath);
+            file.transferTo(uploadPath.resolve(fileName));
+            product.setImage(fileName);
+        } else {
+            // Giữ lại hình ảnh hiện có
+            Product existing = productService.getProductById(id);
+            if (existing != null) {
+                product.setImage(existing.getImage());
+            }
+        }
         productService.saveProduct(product);
         return "redirect:/products";
     }
 
     // Xóa sản phẩm
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/delete/{id}")
     public String deleteProduct(@PathVariable Integer id) {
         productService.deleteProduct(id);

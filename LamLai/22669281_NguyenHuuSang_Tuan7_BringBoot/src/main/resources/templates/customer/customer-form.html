@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form khách hàng</title>
+    <meta charset="UTF-8"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${customer.id == null} ? 'Thêm khách hàng' : 'Sửa khách hàng'"></h1>
+    <form th:action="@{/customers/edit/{id}(id=${customer.id})}" method="post">
+        <table class="table table-bordered">
+            <tr>
+                <td>Tên khách hàng: </td>
+                <td> <input type="text" name="name" th:value="${customer.name}" required class="form-control"> </td>
+            </tr>
+            <tr>
+                <td>Số điện thoại: </td>
+                <td> <input type="number" name="sdt" th:value="${customer.sdt}" required class="form-control"> </td>
+            </tr>
+            <tr>
+                <td>Ngày đăng ký: </td>
+                <td>
+                    <input type="date" name="customerSince"
+                           th:value="${customer.customerSince}"
+                            class="form-control" required>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" class="btn btn-primary">Cập nhật</button>
+    </form>
+
+    <a th:href="@{/customers}" class="btn-btn-secondary ms-2">Quay lại danh sách</a>
+</div>
+</body>
+</html>

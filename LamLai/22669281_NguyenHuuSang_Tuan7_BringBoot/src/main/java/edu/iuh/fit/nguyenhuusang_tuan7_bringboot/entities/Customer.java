@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.List;
 
@@ -16,7 +17,7 @@ import java.util.List;
  * @Tác giả: Nguyen Huu Sang
  */
 @Entity
-@Table (name = "customers")
+@Table (name = "customer")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -27,10 +28,11 @@ public class Customer {
     private Integer id;
 
     private String name;
+    private String phone;
 
-    @Temporal(TemporalType.DATE)
-    private Calendar customerSince;
 
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+    private LocalDate customerSince;
+
+    @OneToMany(mappedBy = "customer")
     private List<Order> orders;
 }

@@ -6,14 +6,12 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.util.List;
 
-
 /**
  * @Dự án: 22669281_NguyenHuuSang_Tuan7
  * @Class: Product
  * @Tạo vào ngày: 10/13/2025
  * @Tác giả: Nguyen Huu Sang
  */
-
 
 @Entity
 @Table(name = "product")
@@ -29,6 +27,8 @@ public class Product {
     private String name;
     private BigDecimal price;
     private Boolean inStock;
+
+    private String image;
 
     @ManyToOne
     @JoinColumn(name = "category_id")

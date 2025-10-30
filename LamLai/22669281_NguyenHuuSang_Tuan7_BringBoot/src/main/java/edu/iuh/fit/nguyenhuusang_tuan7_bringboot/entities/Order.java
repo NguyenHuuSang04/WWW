@@ -6,7 +6,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -24,9 +27,9 @@ import java.util.Set;
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)// id tự động tăng lên 1
-    private int id;
+    private Integer id;
 
-    private Calendar date;
+    private LocalDate date;
     @ManyToOne
     @JoinColumn(name = "customer_id")// xác định tên cột trong baảng orders để lưu khóa ngoại liên kết với customer
     private Customer customer;
@@ -36,5 +39,5 @@ public class Order {
     // - persist: lưu cha ( order ) thì con (orderLines) cũng sẽ được lưu
     // - remove: xóa cha ( order ) thì tất cả orderLine liên kết với order đó cx bị xóa theo
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
-    private Set<OrderLine> orderLines;
+    private List<OrderLine> orderLines = new ArrayList<>();
 }
